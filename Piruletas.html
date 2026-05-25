@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Logo Tienda de Chuches</title>
+
+<style>
+    body{
+        margin:0;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#fff7fb;
+        font-family:'Arial', sans-serif;
+    }
+
+    .logo{
+        position:relative;
+        width:420px;
+        height:220px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    /* Piruleta */
+    .lollipop{
+        position:absolute;
+        left:20px;
+        top:10px;
+        width:90px;
+        height:90px;
+        border-radius:50%;
+        background:
+            repeating-radial-gradient(
+                circle at center,
+                #ff4fa3 0 10px,
+                #ffd54d 10px 20px,
+                #4dd8ff 20px 30px
+            );
+        border:6px solid white;
+        box-shadow:0 8px 18px rgba(0,0,0,.15);
+        transform:rotate(-18deg);
+    }
+
+    .stick{
+        position:absolute;
+        left:60px;
+        top:85px;
+        width:10px;
+        height:90px;
+        background:white;
+        border-radius:10px;
+        transform:rotate(-18deg);
+        box-shadow:0 3px 8px rgba(0,0,0,.12);
+    }
+
+    /* Texto principal */
+    .title{
+        font-size:64px;
+        font-weight:900;
+        color:#ff4fa3;
+        letter-spacing:2px;
+        text-shadow:
+            4px 4px 0 #ffd54d,
+            8px 8px 15px rgba(0,0,0,.12);
+        z-index:2;
+    }
+
+    .title span{
+        color:#4dd8ff;
+    }
+
+    /* Subtítulo */
+    .subtitle{
+        margin-top:8px;
+        background:#ffd54d;
+        color:#7a2d00;
+        padding:8px 20px;
+        border-radius:40px;
+        font-size:18px;
+        font-weight:bold;
+        box-shadow:0 4px 10px rgba(0,0,0,.1);
+    }
+
+    /* Caramelos decorativos */
+    .candy{
+        position:absolute;
+        width:55px;
+        height:35px;
+        border-radius:20px;
+        background:#8cff66;
+        box-shadow:0 4px 10px rgba(0,0,0,.12);
+    }
+
+    .candy::before,
+    .candy::after{
+        content:"";
+        position:absolute;
+        top:7px;
+        width:18px;
+        height:18px;
+        border:6px solid #8cff66;
+        border-top-color:transparent;
+        border-bottom-color:transparent;
+    }
+
+    .candy::before{
+        left:-16px;
+    }
+
+    .candy::after{
+        right:-16px;
+    }
+
+    .c1{
+        right:20px;
+        top:20px;
+        transform:rotate(20deg);
+        background:#8cff66;
+    }
+
+    .c2{
+        right:60px;
+        bottom:10px;
+        transform:rotate(-15deg);
+        background:#ff7f50;
+    }
+
+    .c2::before,
+    .c2::after{
+        border-color:#ff7f50;
+        border-top-color:transparent;
+        border-bottom-color:transparent;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="logo">
+
+    <div class="lollipop"></div>
+    <div class="stick"></div>
+
+    <div class="candy c1"></div>
+    <div class="candy c2"></div>
+
+    <div class="title">
+        DULCE<span>LOKO</span>
+    </div>
+
+    <div class="subtitle">
+        Chuches • Sonrisas • Color
+    </div>
+
+</div>
+
+</body>
+</html>
